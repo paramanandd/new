@@ -23,6 +23,7 @@ public class LoginController {
 	{
 		Status status=new Status();
 		String role =userservice.validUser(user);
+		System.out.println(role);
 		status.setCode(200);
 		status.setMessage("User available");
 		return role;
